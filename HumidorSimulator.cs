@@ -25,8 +25,8 @@ namespace ArifsHumidor.HumidorSimulator
         var reading = new HumidorStatus {
             DeviceId = "1",
             Timestamp = DateTimeOffset.Now,
-            Temperature = rng.NextDouble() * 100,
-            Humidity = rng.NextDouble() * 100,
+            Temperature = rng.Next(5,25),
+            Humidity = rng.Next(0, 100)
         };
 
         return reading;
