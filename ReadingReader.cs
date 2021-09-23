@@ -23,6 +23,7 @@ namespace ArifsHumidor.ReadingReader
             };
         }
 
+    }
         public class TableData
         {
             public string PartitionKey { get; set; }
@@ -32,5 +33,4 @@ namespace ArifsHumidor.ReadingReader
 
 
         }
-    }
 }
