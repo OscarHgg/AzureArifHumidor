@@ -13,7 +13,7 @@ namespace ArifsHumidor.ReadingReader
             FunctionContext context)
         {
             var logger = context.GetLogger("ReadingReader");
-            logger.LogInformation($"C# Queue trigger function processed: {humidorStatus}");
+            logger.LogInformation($"C# Queue was triggered: {humidorStatus}");
 
             return new TableData{
                 PartitionKey = humidorStatus.DeviceId,
